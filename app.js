@@ -5,8 +5,6 @@ const {getCategories} = require('./controllers/categories.controller');
 
 const app = express();
 
-console.log('in app')
-
 app.get('/api/categories', getCategories);
 
 module.exports = app;

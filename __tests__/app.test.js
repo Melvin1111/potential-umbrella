@@ -26,3 +26,4 @@ describe('GET /api/categories', () => {
 			});
 	});
 });
+//test for nonnexistant endpoint
