@@ -1,9 +1,11 @@
-const {fetchCategories} = require('../models/categories.model')
+const { fetchCategories } = require('../models/categories.model');
 
-exports.getCategories = (req,res,next)=>{
-    fetchCategories().then((categories)=>{
-        res.status(200).send({categories})
-    }).catch((error)=>{
-        next(error)
-    })
-}
+exports.getCategories = (req, res, next) => {
+	fetchCategories()
+		.then((categories) => {
+			res.status(200).send({ categories });
+		})
+		.catch((error) => {
+			next(error);
+		});
+};
