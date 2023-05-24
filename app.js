@@ -3,6 +3,7 @@ const { getCategories } = require('./controllers/categories.controller');
 const { getComments, deleteComment } = require('./controllers/comments.controller');
 const { postComment } = require('./controllers/reviews-comments.controller');
 const { getReview, getReviews, patchVotes, getReviewsQueries, } = require('./controllers/reviews.controller');
+const {getUsers,} = require ('./controllers/users.controller')
 
 //require controllers here
 

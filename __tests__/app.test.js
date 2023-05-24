@@ -15,7 +15,7 @@ afterAll(() => {
 describe('GET /api/categories', () => {
 	test('responds with an array of categories', () => {
 		return request(app)
-            .get('/api/categories')
+			.get('/api/categories')
 			.expect(200)
 			.then((response) => {
 				expect(response.body.categories.length).toBe(4);
